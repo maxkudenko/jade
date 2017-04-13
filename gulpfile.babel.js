@@ -48,7 +48,7 @@ function copy() {
 
 // Copy page templates into finished HTML files
 function pages() {
-  return gulp.src('src/pages/*.jade')
+  return gulp.src('src/pages/**/*.jade')
     .pipe(jade({
       client: false,
     }))
